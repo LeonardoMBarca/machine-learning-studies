@@ -20,7 +20,6 @@ grid_param = {
 
 model = ElasticNet()
 
-# Tempo de execução sem n_jobs=-1
 start_time = time.time()
 grid = GridSearchCV(estimator=model, param_grid=grid_param, cv=5)
 grid.fit(x, y)
@@ -28,7 +27,6 @@ end_time = time.time()
 
 print("Tempo de execução sem n_jobs=-1:", end_time - start_time)
 
-# Tempo de execução com n_jobs=-1
 start_time = time.time()
 grid = GridSearchCV(estimator=model, param_grid=grid_param, cv=5, n_jobs=-1)
 grid.fit(x, y)

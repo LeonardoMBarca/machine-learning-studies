@@ -5,7 +5,7 @@ pd.set_option('display.max_columns', 64)
 pd.set_option('display.max_row', 64)
 
 # Convert the file into a dataframe
-file = 'Logistic Regression/data/Data_train_reduced.csv'
+file = '/Users/leona/OneDrive/Documentos/GitHub/machine-learning-studies/classification/Logistic Regression/data/Data_train_reduced.csv'
 df = pd.read_csv(file)
 
 # Drop unnecessary columns
